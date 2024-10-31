@@ -1,6 +1,7 @@
 defmodule LogSewer.Sewer do
   @moduledoc false
 
+  @spec handle(map()) :: any()
   def handle(params) do
     Task.async(fn ->
       app_name = params["app_name"]

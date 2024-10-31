@@ -20,6 +20,7 @@ defmodule LogSewerWeb.ConnCase do
   using do
     quote do
       use LogSewerWeb, :verified_routes
+
       import LogSewerWeb.ConnCase
       # Import conveniences for testing with connections
       import Phoenix.ConnTest

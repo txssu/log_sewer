@@ -1,5 +1,6 @@
 defmodule LogSewer.TelegramClient do
   @moduledoc false
+  @spec send_message(String.t()) :: any()
   def send_message(message) do
     ExGram.send_message(chat_id(), message, token: token(), parse_mode: "MarkdownV2")
   end
