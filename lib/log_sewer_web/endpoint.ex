@@ -46,5 +46,6 @@ defmodule LogSewerWeb.Endpoint do
   plug Plug.MethodOverride
   plug Plug.Head
   plug Plug.Session, @session_options
+  plug LogSewerWeb.NaiveAuthPlug
   plug LogSewerWeb.Router
 end

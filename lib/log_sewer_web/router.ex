@@ -3,7 +3,6 @@ defmodule LogSewerWeb.Router do
 
   pipeline :api do
     plug :accepts, ["json"]
-    plug LogSewerWeb.NaiveAuthPlug
   end
 
   scope "/api", LogSewerWeb do
